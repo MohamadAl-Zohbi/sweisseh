@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="ar">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" href="index.css">
 
 <head>
@@ -10,29 +14,29 @@
 
 
     <div id="loader" class="loading-container">
-            <div class="papa-loader">
-                <h1 class="loading-text">يتم التحميل...</h1>
+        <div class="papa-loader">
+            <h1 class="loading-text">يتم التحميل...</h1>
             <div class="loading-bar">
                 <div class="loading-masure"></div>
             </div>
-            </div>
+        </div>
     </div>
     <header>
         <div class="sub-header">
-            <div id="nav-menu">
+            <div id="nav-menu" onclick="openMenu()">
                 <svg id="headerMenu" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"
-              aria-haspopup="true">
-              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-            </svg>
+                    aria-haspopup="true">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                </svg>
             </div>
             <div class="content">
                 <img id="logo" src="h.jpg" alt="planet">
                 <span>
-                    قرية  <br class="null">السويسة
+                    قرية <br class="null">السويسة
                 </span>
             </div>
             <div id="menu">
-                <ul>
+                <ul id="openmenu">
                     <li class="target">
                         <div class="menu-hover">
                             <ul>
@@ -42,7 +46,7 @@
                                 <li>الحقل 1</li>
                                 <li>الحقل 1</li>
 
-                                
+
                             </ul>
                         </div>
                         الصفحة الرأيسية
@@ -51,25 +55,29 @@
                         <div class="menu-hover">
                             menu-hover
                         </div>
-                        عنا</li>
+                        عنا
+                    </li>
                     <li class="target">
                         <div class="menu-hover">
                             menu-hover
                         </div>
-                        تبرع </li>
+                        تبرع
+                    </li>
                     <li class="target">
                         <div class="menu-hover">
                             menu-hover
                         </div>
-                        خدمات</li>
+                        خدمات
+                    </li>
                     <li class="target">
                         <div class="menu-hover">
                             menu-hover
                         </div>
-                        ما بعرف</li>
+                        ما بعرف
+                    </li>
                 </ul>
             </div>
-            
+
         </div>
 
     </header>
@@ -80,6 +88,7 @@
 
     </footer>
 </body>
+<script src="index.js"></script>
 <script>
     function simulateLoading() {
         var progress = 0;
@@ -100,4 +109,5 @@
     }
     window.addEventListener('load', simulateLoading);
 </script>
+
 </html>
