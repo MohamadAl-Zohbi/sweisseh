@@ -8,10 +8,10 @@
 
 <body dir="rtl">
     <div id="loader" class="loading-container">
-            <div class="test">
+            <div class="papa-loader">
                 <h1 class="loading-text">يتم التحميل...</h1>
             <div class="loading-bar">
-                <div class="loading-progress"></div>
+                <div class="loading-masure"></div>
             </div>
             </div>
     </div>
@@ -25,11 +25,40 @@
             </div>
             <div id="menu">
                 <ul>
-                    <li>الصفحة الرأيسية</li>
-                    <li>عنا</li>
-                    <li>تبرع </li>
-                    <li>خدمات</li>
-                    <li>ما بعرف</li>
+                    <li class="target">
+                        <div class="menu-hover">
+                            <ul>
+                                <li>الحقل 1</li>
+                                <li>الحقل 1</li>
+                                <li>الحقل 1</li>
+                                <li>الحقل 1</li>
+                                <li>الحقل 1</li>
+
+                                
+                            </ul>
+                        </div>
+                        الصفحة الرأيسية
+                    </li>
+                    <li class="target">
+                        <div class="menu-hover">
+                            menu-hover
+                        </div>
+                        عنا</li>
+                    <li class="target">
+                        <div class="menu-hover">
+                            menu-hover
+                        </div>
+                        تبرع </li>
+                    <li class="target">
+                        <div class="menu-hover">
+                            menu-hover
+                        </div>
+                        خدمات</li>
+                    <li class="target">
+                        <div class="menu-hover">
+                            menu-hover
+                        </div>
+                        ما بعرف</li>
                 </ul>
             </div>
         </div>
@@ -56,7 +85,7 @@
         }, 300);
     }
     function updateProgress(progress) {
-        var progressBar = document.querySelector('.loading-progress');
+        var progressBar = document.querySelector('.loading-masure');
         progressBar.style.width = progress + '%';
     }
     window.addEventListener('load', simulateLoading);
