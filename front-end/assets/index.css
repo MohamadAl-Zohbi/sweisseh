@@ -5,8 +5,13 @@
     position: fixed;
     background-color: #ffffffc7;
     z-index: 99;
-    display: flex;
+    display: none;
     align-items: center;
+    text-align: center;
+}
+
+header .sub-header #menu .menu-hover .sub-hover {
+    list-style: none;
     text-align: center;
 }
 
@@ -89,6 +94,7 @@ header div div span {
 #menu ul {
     list-style: block;
     margin-top: 10px;
+    transition: all 0.25s;
 }
 
 #menu ul .target {
@@ -133,6 +139,20 @@ header div div span {
 }
 
 
+main{
+    width: 100%;
+    height: 1000px;
+
+}
+main article {
+    width: calc(100% -40px);
+    margin: 20px;
+}
+
+
+
+
+
 @media screen and (max-width:700px) {
     #nav-menu {
         display: inline-block;
@@ -171,11 +191,13 @@ header div div span {
     header .sub-header .content {
         height: 55px;
     }
-.header-text{
-    margin-top: 20px;
-}
+
+    .header-text {
+        margin-top: 20px;
+    }
+
     header .sub-header {
         width: calc(100% - 20px);
-        padding:0px 10px 0px 10px;
+        padding: 0px 10px 0px 10px;
     }
 }
