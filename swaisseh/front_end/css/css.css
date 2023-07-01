@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+
+.container{
+    display: block;
+    text-align: center;
+    width: 100%;
+
+    margin: auto;
+    line-height: 40px;
+}
+
+.card{
+    background-color: rgb(65, 63, 63);
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.image{
+    width: 98%;
+}        
+
+.actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions button{
+    width: 50%;
+    border: none;
+    height: 50px;
+
+    border-radius: 5px;
+}
+
+.description{
+    padding: 10px;
+}
+
+.actions .reserved{
+    background-color: red;
+    color: white;
+}
+.date{
+    color: rgba(255, 255, 255, 0.556);
+}

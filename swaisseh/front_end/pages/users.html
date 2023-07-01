@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قرية السويسة</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/users.css">
+
+</head>
+
+<body dir="rtl">
+    <header>
+        <nav>
+            <span>
+                <img src="../img/signup.jpg">
+                <h3>قرية السويسة</h3>
+            </span>
+        </nav>
+
+        <ul id="menu">
+
+            <div id="close" onclick="hide_menu()">
+                <div class="right"></div>
+                <div class="left"></div>
+            </div>
+            <a href="medicament.php">
+                <li id="medicament">الادوية</li>
+            </a>
+            <a href="news.php"><li id="news">الاخبار</li></a>
+            <a href="activity.php"><li id="activity">المناسبات</li></a>
+            <a href="financial.php"><li id="financial">التبرعات</li></a>
+            <a href="contactus.php"><li id="contactus">تواصل معنا</li></a>
+            <a href="users.html"><li id="users">الصفحة الرئيسية</li></a>
+
+
+            <!-- <li>الاحصاءات</li> -->
+        </ul>
+        <div id="settings">
+            <a href="settings.php">
+                <img src="../img/settings.png" style="width: 30px; height: 30px;border-radius: 50%;">
+            </a>
+        </div>
+
+        <div onclick="show_menu()" id="show-menu">
+            <img style="width: 100%;" src="../img/menu.png" alt="">
+        </div>
+    </header>
+
+    <br>
+
+    <main>
+        <article id="topics">
+            <h1 class="title">
+                إنجازات الشهر
+            </h1>
+            <div class="carousel">
+                <div id="caro1" class="caro">
+                    <span class="prev" onclick="prev()"><img src="../img/back.png"></span>
+                    <span class="next" onclick="next()"><img src="../img/next.png"></span>
+                    <img id="img" src="../img/mahmoud.jpg">
+                    <button id="topic-more" value="1">
+                        <a href="topics.php" style="text-decoration: none;">مشاهدة المزيد</a>
+                    </button>
+                </div>
+            </div>
+            <p class="text" id="description">
+                لقد تزوج محمود خليل بفضل هذا الموقع
+            </p>
+        </article>
+        <br>
+
+    </main>
+</body>
+<script src="../js/users.js">
+    
+</script>
+
+</html>

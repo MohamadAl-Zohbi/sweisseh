@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <meta name="theme-color" content="#00d5d5">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body dir="rtl">
+    <header>
+        <nav>
+            <span>
+                <img src="img/signup.jpg">
+                <h3>قرية السويسة</h3>
+            </span>
+        </nav>
+
+        <ul id="menu">
+            <a href="pages/contactus.html"><li>تواصل معنا</li></a>
+            <li>عنا</li>
+            <li>احداث</li>
+            <li>اخبار</li>
+            <li>برامجنا</li>
+        </ul>
+        <a href="pages/signup.php">
+            <button id="sign">
+                انضم الان
+            </button>
+        </a>
+    </header>
+    <br>
+    <div class="carousel">
+        <div id="caro1" class="caro">
+            <span class="prev" onclick="prev()"><img src="img/back.png"></span>
+            <span class="next" onclick="next()"><img src="img/next.png"></span>
+            <img id="img" src="img/s1.jpg">
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="js/index.js"></script>

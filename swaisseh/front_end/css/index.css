@@ -1,0 +1,118 @@
+* {
+    padding: 0%;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+header {
+    width: 98%;
+    height: 50px;
+    background-color: rgb(0, 168, 198);
+    color: white;
+    padding: 5px 1%;
+    margin: auto;
+}
+
+header nav {
+    width: 154px;
+    display: inline-block;
+    position: relative;
+}
+
+header nav h3 {
+    display: inline-block;
+    position: absolute;
+    top: 16px;
+    right: 60px;
+}
+
+header nav span img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+#menu {
+    list-style: none;
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+    right: 170px;
+    width: calc(70% - 110px);
+    text-align: center;
+
+
+}
+
+#menu li {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 5%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#menu li:hover{
+    color: red;
+}
+
+#sign {
+    width: 100px;
+    height: 40px;
+    /* left: 5px;
+    top: 10px; */
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    color: red;
+    box-shadow: 0px 0px 2px 1px white;
+    font-weight: bold;
+    font-size: 17px;
+    float: left;
+    margin-top: 5px;
+}
+
+.carousel {
+    width: 100%;
+    position: relative;
+
+}
+
+.caro {
+    width: 100%;
+    height: auto;
+    background-color: rgb(213, 213, 224);
+    position: relative;
+    text-align: center;
+}
+
+.prev {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    top: 47%;
+    left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.next {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    top: 47%;
+    right: 10px;
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.caro #img {
+    width: 95%;
+    height: 70vh;
+    object-fit: cover;
+}
